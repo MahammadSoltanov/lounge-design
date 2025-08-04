@@ -1,2 +1,14 @@
-# lounge-design
-A single-page responsive landing page built with plain HTML, CSS, and JavaScript based on a design from ThemeWagon. Created to demonstrate the ability to translate real-world UI designs into clean, maintainable code without using any frameworks.
+# Responsive Landing Page Clone
+
+This is a one-page responsive website built with pure HTML, CSS, and JavaScript. The layout is recreated from a public ThemeWagon design to demonstrate my ability to convert real-world UI designs into functional, clean, and responsive code.
+
+⚙️ **Tech Stack**:  
+- HTML5  
+- CSS3 (Flexbox & Grid)  
+- Vanilla JavaScript  
+
+📌 **Purpose**:  
+For practice and portfolio demonstration.
+
+🚫 **Disclaimer**:  
+This project is for educational and portfolio purposes only. It is not intended for distribution or commercial use.
