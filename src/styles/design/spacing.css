@@ -1,0 +1,47 @@
+:root {
+    /* Vertical spacing units */
+    --space: calc(3.2rem * var(--multiplier));
+    --vspace-0_125: calc(0.125 * var(--space));
+    --vspace-0_25: calc(0.25 * var(--space));
+    --vspace-0_375: calc(0.375 * var(--space));
+    --vspace-0_5: calc(0.5 * var(--space));
+    --vspace-0_625: calc(0.625 * var(--space));
+    --vspace-0_75: calc(0.75 * var(--space));
+    --vspace-0_875: calc(0.875 * var(--space));
+    --vspace-1: calc(var(--space));
+    --vspace-1_25: calc(1.25 * var(--space));
+    --vspace-1_5: calc(1.5 * var(--space));
+    --vspace-1_75: calc(1.75 * var(--space));
+    --vspace-2: calc(2 * var(--space));
+    --vspace-2_5: calc(2.5 * var(--space));
+    --vspace-3: calc(3 * var(--space));
+    --vspace-3_5: calc(3.5 * var(--space));
+    --vspace-4: calc(4 * var(--space));
+    --vspace-4_5: calc(4.5 * var(--space));
+    --vspace-5: calc(5 * var(--space));
+    --vspace-5_5: calc(5.5 * var(--space));
+    --vspace-6: calc(6 * var(--space));
+    --vspace-6_5: calc(6.5 * var(--space));
+    --vspace-7: calc(7 * var(--space));
+    --vspace-7_5: calc(7.5 * var(--space));
+    --vspace-8: calc(8 * var(--space));
+    --vspace-8_5: calc(8.5 * var(--space));
+    --vspace-9: calc(9 * var(--space));
+    --vspace-9_5: calc(9.5 * var(--space));
+    --vspace-10: calc(10 * var(--space));
+
+    /* Border radius */
+    --radius-0: 0;
+    --radius-xs: 3px;
+    --radius-sm: 5px;
+    --radius-md: 10px;
+    --radius-lg: 15px;
+    --radius-xl: 20px;
+    --radius-2xl: 25px;
+    --radius-3xl: 30px;
+    --radius-full: 1000px;
+    --border-radius: var(--radius-sm);
+
+    /* Gutter */
+    --gutter: clamp(1rem, calc(2vw + .2rem), 2.2rem);
+}

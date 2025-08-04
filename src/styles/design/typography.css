@@ -1,0 +1,35 @@
+:root {
+    /* Type scale */
+    --text-scale-ratio: 1.2;
+    --base-font-size: calc(2rem * var(--multiplier));
+    --text-base: var(--base-font-size);
+    --text-xs: calc((var(--text-base) / var(--text-scale-ratio)) / var(--text-scale-ratio));
+    --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+    --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+    --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+    --text-2xl: calc(var(--text-xl) * var(--text-scale-ratio));
+    --text-3xl: calc(var(--text-2xl) * var(--text-scale-ratio));
+    --text-display: calc(var(--text-3xl) * var(--text-scale-ratio));
+    --text-2display: calc(var(--text-display) * var(--text-scale-ratio));
+    --text-3display: calc(var(--text-2display) * var(--text-scale-ratio));
+    --text-huge: calc(var(--text-3display) * var(--text-scale-ratio));
+    --text-2huge: calc(var(--text-huge) * var(--text-scale-ratio));
+    --text-3huge: calc(var(--text-2huge) * var(--text-scale-ratio));
+
+    /* Type sizes for elements */
+    --type-size-body: var(--text-base);
+    --type-size-body-sm: var(--text-sm);
+    --type-size-all-caps: var(--text-sm);
+    --type-size-h1: clamp(var(--text-display), calc((var(--text-display) - 1rem) + 2vw), var(--text-2display));
+    --type-size-h2: clamp(var(--text-2xl), calc((var(--text-2xl) - .75rem) + 1.5vw), var(--text-3xl));
+    --type-size-h3: clamp(var(--text-xl), calc((var(--text-xl) - .5rem) + 1vw), var(--text-2xl));
+    --type-size-h4: var(--text-lg);
+    --type-size-h5: var(--text-md);
+    --type-size-h6: var(--type-size-all-caps);
+    --type-size-quote: clamp(var(--text-md), calc((var(--text-md) - .5rem) + 1vw), var(--text-lg));
+    --type-size-lead: clamp(var(--text-base), calc((var(--text-base) - .5rem) + 1vw), var(--text-md));
+    --type-size-caption: var(--text-xs);
+    --type-size-drop-cap: var(--vspace-3);
+    --type-size-code: var(--text-xs);
+}
