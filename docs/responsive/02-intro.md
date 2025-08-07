@@ -7,7 +7,7 @@ This section includes:
 - Social media links
 - A scroll-down button with animated text
 
----
+
 
 ## Desktop
 
@@ -31,7 +31,7 @@ This section includes:
 - Coffee images sized to fit grid columns
 - Aspect ratios preserved for visual balance
 
----
+
 
 ## Tablet
 
@@ -50,7 +50,7 @@ This section includes:
 ### Spacing
 - Margins and paddings reduced for tighter layout
 
----
+
 
 ## Mobile
 

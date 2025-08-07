@@ -5,7 +5,7 @@ The header contains three key elements:
 - **Navigation links** (centered)
 - **Phone number** (right-aligned)
 
----
+
 
 ## Desktop (`> 1024px`)
 
@@ -26,7 +26,7 @@ The header contains three key elements:
 ### Assets
 - Logo image size: `108px × 28px`
 
----
+
 
 ## Tablet (`600px – 1024px`)
 
@@ -37,7 +37,7 @@ The header contains three key elements:
 ### Typography
 - Dropdown text: `font-size: 20px`
 
----
+
 
 ## Mobile (`< 600px`)
 
