@@ -1,0 +1,41 @@
+:root {
+    --base-size: 62.5%;
+    --multiplier: 1;
+    --space: calc(3.2rem * var(--multiplier));
+    --base-font-size: calc(2rem * var(--multiplier));
+}
+
+html {
+    font-size: var(--base-size);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-white);
+    font-family: var(--font-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: calc(var(--gutter) * 2);
+    margin-inline: auto;
+    width: min(98%, var(--width-grid-max));
+    gap: 20rem;
+}
+
+.border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 1000px;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

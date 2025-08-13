@@ -1,14 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lounge</title>
 
-    <link rel="stylesheet" href="styles/design/design.css">    
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles/design/design.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="header u-grid-center">
+      <img class="logo" src="./images/logo.svg" />
+
+      <div class="dropdown">
+        <button class="btn dropdown__button" onclick="toggleDropdown()">
+          <span class="dropdown__icon"></span>
+        </button>
+        <div class="dropdown__content">
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a target-section="intro">Intro</a></li>
+              <li class="navigation__item"><a target-section="about">About</a></li>
+              <li class="navigation__item"><a target-section="menu">Menu</a></li>
+              <li class="navigation__item"><a target-section="gallery">Gallery</a></li>
+            </ul>
+          </nav>
+
+          <a href="tel:+123456789" class="contact">
+            <img class="contact__icon" src="./images/icons/phone.svg" alt="" />
+            <span class="contact__phone">+1 (234) 567-89</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="header__content u-grid-center">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a target-section="intro">Intro</a></li>
+            <li class="navigation__item"><a target-section="about">About</a></li>
+            <li class="navigation__item"><a target-section="menu">Menu</a></li>
+            <li class="navigation__item"><a target-section="gallery">Gallery</a></li>
+          </ul>
+        </nav>
+
+        <a href="tel:+123456789" class="contact">
+          <img class="contact__icon" src="./images/icons/phone.svg" alt="" />
+          <span class="contact__phone">+1 (234) 567-89</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="sections">
+      <section id="intro" class="border">
+        <h2>Intro</h2>
+      </section>
+
+      <section id="about" class="border">
+        <h2>About</h2>
+      </section>
+
+      <section id="menu" class="border">
+        <h2>Menu</h2>
+      </section>
+
+      <section id="gallery" class="border">
+        <h2>Our Gallery</h2>
+      </section>
+
+      <section class="border">
+        <h2>What Our Clients Say</h2>
+      </section>
+    </main>
+
+    <form class="border">form</form>
+
+    <footer class="border">footer</footer>
+  </body>
+
+  <script src="./scripts/navigation.js"></script>
+  <script src="./scripts/dropdown.js"></script>
 </html>
