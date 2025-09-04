@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
+    <div id="preloader">
+      <div id="loader" class="dots-fade">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
     <header class="header u-grid-center">
       <img class="logo" src="./images/logo.svg" />
 
@@ -49,10 +57,45 @@
         </a>
       </div>
     </header>
+    <main class="sections ss-home">
+      <section id="intro" class="intro-hero">
+        <div class="intro-hero__header">
+          <span class="intro-header__line"></span>
+          <span class="intro-header__overline">Welcome to</span>
+          <h1 class="intro-header__title">
+            Lounge
+            <br />
+            Cafe
+          </h1>
+        </div>
 
-    <main class="sections">
-      <section id="intro" class="border">
-        <h2>Intro</h2>
+        <div class="intro-hero__media">
+          <img src="images/intro-pic-primary.jpg" class="intro-media__img--primary" alt="Coffee beans spilling from a cup." />
+        </div>
+
+        <div class="intro-hero__details">
+          <img src="images/intro-pic-secondary.jpg" class="intro-details__img--secondary" alt="Coffee, plant, and plate." />
+          <div>
+            <p class="intro-details__text">Savor moments of bliss with every sip, as our expertly crafted coffees and delectable pastries embrace your senses.</p>
+            <ul class="intro-details__socials">
+              <li><a href="#0">FB</a></li>
+              <li><a href="#1">IG</a></li>
+              <li><a href="#2">PI</a></li>
+              <li><a href="#3">X</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="intro-hero__scroll">
+          <a class="intro-scroll__link" target-section="about">
+            <span class="intro-scroll__circle-text"></span>
+            <div class="intro-scroll__icon">
+              <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3E7765">
+                <path d="m5.214 14.522s4.505 4.502 6.259 6.255c.146.147.338.22.53.22s.384-.073.53-.22c1.754-1.752 6.249-6.244 6.249-6.244.144-.144.216-.334.217-.523 0-.193-.074-.386-.221-.534-.293-.293-.766-.294-1.057-.004l-4.968 4.968v-14.692c0-.414-.336-.75-.75-.75s-.75.336-.75.75v14.692l-4.979-4.978c-.289-.289-.761-.287-1.054.006-.148.148-.222.341-.221.534 0 .189.071.377.215.52z" fill-rule="nonzero"></path>
+              </svg>
+            </div>
+          </a>
+        </div>
       </section>
 
       <section id="about" class="border">
@@ -76,7 +119,7 @@
 
     <footer class="border">footer</footer>
   </body>
-
+  <script src="./scripts/preloader.js"></script>
   <script src="./scripts/navigation.js"></script>
   <script src="./scripts/dropdown.js"></script>
 </html>
