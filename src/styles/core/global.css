@@ -3,6 +3,8 @@
     --multiplier: 1;
     --space: calc(3.2rem * var(--multiplier));
     --base-font-size: calc(2rem * var(--multiplier));
+
+    --base-padding: calc(var(--gutter) * 2);
 }
 
 html {
@@ -11,18 +13,27 @@ html {
 }
 
 body {
+    font-size: var(--text-base);
+    font-weight: 400;
+    line-height: var(--vspace-1);
     background-color: var(--color-bg);
-    color: var(--color-white);
+    color: var(--color-text);
     font-family: var(--font-1);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-inline: calc(var(--gutter) * 2);
+    padding-inline: var(--base-padding);
     margin-inline: auto;
     width: min(98%, var(--width-grid-max));
-    gap: 20rem;
+    gap: var(--vspace-1);
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .border {
     display: flex;
@@ -31,11 +42,16 @@ body {
     border: 1px solid white;
     height: 100px;
     width: 100%;
-    margin-bottom: 1000px;
 }
 
 .sections {
+    --content-padding-top: max(10.6rem, 10vh);
+    --content-padding-bottom: var(--vspace-2_5);
+
     display: flex;
     flex-direction: column;
+    gap: var(--vspace-6);
     width: 100%;
+    padding-top: var(--content-padding-top);
+    padding-bottom: var(--content-padding-bottom);
 }

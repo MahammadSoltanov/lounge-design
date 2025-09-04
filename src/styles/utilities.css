@@ -3,3 +3,7 @@
     justify-content: center;
     align-items: center;
 }
+
+.u-page-padding {
+    padding-inline: calc(var(--gutter) * 2);
+}
