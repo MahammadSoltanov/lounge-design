@@ -101,8 +101,8 @@
       <section id="about" class="about">
         <div class="about__header">
           <div class="about__intro">
-            <span class="about__number">01.</span>
-            <h2 class="about__title">Our Story</h2>
+            <span class="section-header__number about__number">01.</span>
+            <h2 class="section-header__title about__title">Our Story</h2>
           </div>
           <img class="about__image" src="images/about-pic-primary.jpg" alt="" />
         </div>
@@ -117,8 +117,52 @@
         </div>
       </section>
 
-      <section id="menu" class="border">
-        <h2>Menu</h2>
+      <section id="menu" class="menu">
+        <div class="menu__intro">
+          <div class="menu__header">
+            <span class="section-header__number menu__number">02.</span>
+            <h2 class="section-header__title menu__title">Our Menu</h2>
+          </div>
+          <ol class="menu__tabs">
+            <li class="tab active">
+              <a class="tab__switch">
+                <div>
+                  <span class="tab__number">01.</span>
+                  <span class="tab__text">Signature Blends</span>
+                </div>
+                <svg class="tab__arrow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" />
+                </svg>
+              </a>
+            </li>
+            <li class="tab">
+              <a class="tab__switch">
+                <div>
+                  <span class="tab__number">02.</span>
+                  <span class="tab__text">Freshly Baked Pastries</span>
+                </div>
+                <svg class="tab__arrow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" />
+                </svg>
+              </a>
+            </li>
+            <li class="tab">
+              <a class="tab__switch">
+                <div>
+                  <span class="tab__number">03.</span>
+                  <span class="tab__text">Gourmet Treats</span>
+                </div>
+                <svg class="tab__arrow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" />
+                </svg>
+              </a>
+            </li>
+          </ol>
+        </div>
+
+        <div class="menu__details">
+          <!-- Dynamic contenct from tabs.js -->
+        </div>
       </section>
 
       <section id="gallery" class="border">
@@ -137,4 +181,5 @@
   <script src="./scripts/preloader.js"></script>
   <script src="./scripts/navigation.js"></script>
   <script src="./scripts/dropdown.js"></script>
+  <script src="./scripts/tabs.js"></script>
 </html>
