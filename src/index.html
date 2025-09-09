@@ -1,47 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lounge</title>
 
-    <link rel="stylesheet" href="styles/design/design.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
-  <body>
-    <div id="preloader">
-      <div id="loader" class="dots-fade">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lounge</title>
+
+  <link rel="stylesheet" href="styles/design/design.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div id="preloader">
+    <div id="loader" class="dots-fade">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
+  </div>
 
-    <header class="header u-grid-center">
-      <img class="logo" src="./images/logo.svg" />
+  <header class="header u-grid-center">
+    <img class="logo" src="./images/logo.svg" />
 
-      <div class="dropdown">
-        <button class="btn dropdown__button" onclick="toggleDropdown()">
-          <span class="dropdown__icon"></span>
-        </button>
-        <div class="dropdown__content">
-          <nav class="navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item"><a target-section="intro">Intro</a></li>
-              <li class="navigation__item"><a target-section="about">About</a></li>
-              <li class="navigation__item"><a target-section="menu">Menu</a></li>
-              <li class="navigation__item"><a target-section="gallery">Gallery</a></li>
-            </ul>
-          </nav>
-
-          <a href="tel:+123456789" class="contact">
-            <img class="contact__icon" src="./images/icons/phone.svg" alt="" />
-            <span class="contact__phone">+1 (234) 567-89</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="header__content u-grid-center">
+    <div class="dropdown">
+      <button class="btn dropdown__button" onclick="toggleDropdown()">
+        <span class="dropdown__icon"></span>
+      </button>
+      <div class="dropdown__content">
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item"><a target-section="intro">Intro</a></li>
@@ -56,193 +42,268 @@
           <span class="contact__phone">+1 (234) 567-89</span>
         </a>
       </div>
-    </header>
-    <main class="sections ss-home">
-      <section id="intro" class="intro-hero">
-        <div class="intro-hero__header">
-          <span class="intro-header__line"></span>
-          <span class="intro-header__overline">Welcome to</span>
-          <h1 class="intro-header__title">
-            Lounge
-            <br />
-            Cafe
-          </h1>
-        </div>
+    </div>
 
-        <div class="intro-hero__media">
-          <img src="images/intro-pic-primary.jpg" class="intro-media__img--primary" alt="Coffee beans spilling from a cup." />
-        </div>
+    <div class="header__content u-grid-center">
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a target-section="intro">Intro</a></li>
+          <li class="navigation__item"><a target-section="about">About</a></li>
+          <li class="navigation__item"><a target-section="menu">Menu</a></li>
+          <li class="navigation__item"><a target-section="gallery">Gallery</a></li>
+        </ul>
+      </nav>
 
-        <div class="intro-hero__details">
-          <img src="images/intro-pic-secondary.jpg" class="intro-details__img--secondary" alt="Coffee, plant, and plate." />
-          <div>
-            <p class="intro-details__text">Savor moments of bliss with every sip, as our expertly crafted coffees and delectable pastries embrace your senses.</p>
-            <ul class="intro-details__socials">
-              <li><a href="#0">FB</a></li>
-              <li><a href="#1">IG</a></li>
-              <li><a href="#2">PI</a></li>
-              <li><a href="#3">X</a></li>
-            </ul>
+      <a href="tel:+123456789" class="contact">
+        <img class="contact__icon" src="./images/icons/phone.svg" alt="" />
+        <span class="contact__phone">+1 (234) 567-89</span>
+      </a>
+    </div>
+  </header>
+  <main class="sections ss-home">
+    <section id="intro" class="intro-hero">
+      <div class="intro-hero__header">
+        <span class="intro-header__line"></span>
+        <span class="intro-header__overline">Welcome to</span>
+        <h1 class="intro-header__title">
+          Lounge
+          <br />
+          Cafe
+        </h1>
+      </div>
+
+      <div class="intro-hero__media">
+        <img src="images/intro-pic-primary.jpg" class="intro-media__img--primary" alt="Coffee beans spilling from a cup." />
+      </div>
+
+      <div class="intro-hero__details">
+        <img src="images/intro-pic-secondary.jpg" class="intro-details__img--secondary" alt="Coffee, plant, and plate." />
+        <div>
+          <p class="intro-details__text">Savor moments of bliss with every sip, as our expertly crafted coffees and delectable pastries embrace your senses.</p>
+          <ul class="intro-details__socials">
+            <li><a href="#0">FB</a></li>
+            <li><a href="#1">IG</a></li>
+            <li><a href="#2">PI</a></li>
+            <li><a href="#3">X</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="intro-hero__scroll">
+        <a class="intro-scroll__link" target-section="about">
+          <span class="intro-scroll__circle-text"></span>
+          <div class="intro-scroll__icon">
+            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3E7765">
+              <path d="m5.214 14.522s4.505 4.502 6.259 6.255c.146.147.338.22.53.22s.384-.073.53-.22c1.754-1.752 6.249-6.244 6.249-6.244.144-.144.216-.334.217-.523 0-.193-.074-.386-.221-.534-.293-.293-.766-.294-1.057-.004l-4.968 4.968v-14.692c0-.414-.336-.75-.75-.75s-.75.336-.75.75v14.692l-4.979-4.978c-.289-.289-.761-.287-1.054.006-.148.148-.222.341-.221.534 0 .189.071.377.215.52z" fill-rule="nonzero"></path>
+            </svg>
           </div>
-        </div>
+        </a>
+      </div>
+    </section>
 
-        <div class="intro-hero__scroll">
-          <a class="intro-scroll__link" target-section="about">
-            <span class="intro-scroll__circle-text"></span>
-            <div class="intro-scroll__icon">
-              <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3E7765">
-                <path d="m5.214 14.522s4.505 4.502 6.259 6.255c.146.147.338.22.53.22s.384-.073.53-.22c1.754-1.752 6.249-6.244 6.249-6.244.144-.144.216-.334.217-.523 0-.193-.074-.386-.221-.534-.293-.293-.766-.294-1.057-.004l-4.968 4.968v-14.692c0-.414-.336-.75-.75-.75s-.75.336-.75.75v14.692l-4.979-4.978c-.289-.289-.761-.287-1.054.006-.148.148-.222.341-.221.534 0 .189.071.377.215.52z" fill-rule="nonzero"></path>
+    <section id="about" class="about">
+      <div class="about__header">
+        <div class="about__intro">
+          <span class="section-header__number about__number">01.</span>
+          <h2 class="section-header__title about__title">Our Story</h2>
+        </div>
+        <img class="about__image" src="images/about-pic-primary.jpg" alt="" />
+      </div>
+
+      <div class="about__content">
+        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi earum, ut consequuntur pariatur fugiat aliquam voluptatem officia blanditiis ipsa laboriosam ad velit voluptate nisi saepe quisquam minima culpa eaque amet.</p>
+        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi earum, ut consequuntur pariatur fugiat aliquam voluptatem officia blanditiis ipsa laboriosam ad velit voluptate nisi saepe quisquam minima culpa eaque amet.</p>
+        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sit neque sequi eius illum at porro aperiam. Iusto reiciendis reprehenderit ipsa molestias sit eaque velit, veritatis quod, cum exercitationem doloribus eos cumque, ipsam voluptate! Nam doloribus quibusdam eos ipsum optio animi ea ex. Atque neque nesciunt numquam fugiat inventore!</p>
+        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sit neque sequi eius illum at porro aperiam. Iusto reiciendis reprehenderit ipsa molestias sit eaque velit, veritatis quod, cum exercitationem doloribus eos cumque, ipsam voluptate! Nam doloribus quibusdam eos ipsum optio animi ea ex. Atque neque nesciunt numquam fugiat inventore!</p>
+        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sit neque sequi eius illum at porro aperiam. Iusto reiciendis reprehenderit ipsa molestias sit eaque velit, veritatis quod, cum exercitationem doloribus.</p>
+        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui quod consequuntur iure. Assumenda, magnam quis ut libero impedit porro?</p>
+        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sit neque sequi eius illum at porro aperiam. Iusto reiciendis reprehenderit ipsa molestias sit eaque velit, veritatis quod, cum exercitationem doloribus eos cumque, ipsam voluptate! Nam doloribus quibusdam eos ipsum optio animi ea ex. Atque neque nesciunt numquam fugiat inventore!</p>
+        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi earum, ut consequuntur pariatur fugiat aliquam voluptatem officia blanditiis ipsa laboriosam ad velit voluptate nisi saepe quisquam minima culpa eaque amet.</p>
+        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sit neque sequi eius illum at porro aperiam. Iusto reiciendis reprehenderit ipsa molestias sit eaque velit, veritatis quod, cum exercitationem doloribus eos cumque, ipsam voluptate! Nam doloribus quibusdam eos ipsum optio animi ea ex. Atque neque nesciunt numquam fugiat inventore!</p>
+        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sit neque sequi eius illum at porro aperiam. Iusto reiciendis reprehenderit ipsa molestias sit eaque velit, veritatis quod, cum exercitationem doloribus eos cumque, ipsam voluptate! Nam doloribus quibusdam eos ipsum optio animi ea ex. Atque neque nesciunt numquam fugiat inventore!</p>
+        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sit neque sequi eius illum at porro aperiam. Iusto reiciendis reprehenderit ipsa molestias sit eaque velit, veritatis quod, cum exercitationem doloribus.</p>
+        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui quod consequuntur iure. Assumenda, magnam quis ut libero impedit porro?</p>
+        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sit neque sequi eius illum at porro aperiam. Iusto reiciendis reprehenderit ipsa molestias sit eaque velit, veritatis quod, cum exercitationem doloribus eos cumque, ipsam voluptate! Nam doloribus quibusdam eos ipsum optio animi ea ex. Atque neque nesciunt numquam fugiat inventore!</p>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="menu__intro">
+        <div class="menu__header">
+          <span class="section-header__number menu__number">02.</span>
+          <h2 class="section-header__title menu__title">Our Menu</h2>
+        </div>
+        <ol class="menu__tabs">
+          <li class="tab active">
+            <a class="tab__switch">
+              <div>
+                <span class="tab__number">01.</span>
+                <span class="tab__text">Signature Blends</span>
+              </div>
+              <svg class="tab__arrow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" />
               </svg>
-            </div>
+            </a>
+          </li>
+          <li class="tab">
+            <a class="tab__switch">
+              <div>
+                <span class="tab__number">02.</span>
+                <span class="tab__text">Freshly Baked Pastries</span>
+              </div>
+              <svg class="tab__arrow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" />
+              </svg>
+            </a>
+          </li>
+          <li class="tab">
+            <a class="tab__switch">
+              <div>
+                <span class="tab__number">03.</span>
+                <span class="tab__text">Gourmet Treats</span>
+              </div>
+              <svg class="tab__arrow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" />
+              </svg>
+            </a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="menu__details">
+        <!-- Dynamic contenct from tabs.js -->
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="gallery__header">
+        <span class="section-header__number gallery__number">03.</span>
+        <h2 class="section-header__title gallery__title">Gallery</h2>
+      </div>
+
+      <div class="gallery-items grid-cols grid-cols--wrap">
+        <div class="gallery-items__item grid-cols__column">
+          <a href="images/gallery/large/l-gallery-01.jpg" class="gallery-items__item-thumb glightbox">
+            <img src="images/gallery/gallery-01.jpg" srcset="images/gallery/gallery-01.jpg 1x, images/gallery/gallery-01@2x.jpg 2x" alt="" />
           </a>
         </div>
-      </section>
 
-      <section id="about" class="about">
-        <div class="about__header">
-          <div class="about__intro">
-            <span class="section-header__number about__number">01.</span>
-            <h2 class="section-header__title about__title">Our Story</h2>
-          </div>
-          <img class="about__image" src="images/about-pic-primary.jpg" alt="" />
+        <div class="gallery-items__item grid-cols__column">
+          <a href="images/gallery/large/l-gallery-02.jpg" class="gallery-items__item-thumb glightbox">
+            <img src="images/gallery/gallery-02.jpg" srcset="images/gallery/gallery-02.jpg 1x, images/gallery/gallery-02@2x.jpg 2x" alt="" />
+          </a>
         </div>
 
-        <div class="about__content">
-          <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi earum, ut consequuntur pariatur fugiat aliquam voluptatem officia blanditiis ipsa laboriosam ad velit voluptate nisi saepe quisquam minima culpa eaque amet.</p>
-          <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi earum, ut consequuntur pariatur fugiat aliquam voluptatem officia blanditiis ipsa laboriosam ad velit voluptate nisi saepe quisquam minima culpa eaque amet.</p>
-          <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sit neque sequi eius illum at porro aperiam. Iusto reiciendis reprehenderit ipsa molestias sit eaque velit, veritatis quod, cum exercitationem doloribus eos cumque, ipsam voluptate! Nam doloribus quibusdam eos ipsum optio animi ea ex. Atque neque nesciunt numquam fugiat inventore!</p>
-          <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sit neque sequi eius illum at porro aperiam. Iusto reiciendis reprehenderit ipsa molestias sit eaque velit, veritatis quod, cum exercitationem doloribus eos cumque, ipsam voluptate! Nam doloribus quibusdam eos ipsum optio animi ea ex. Atque neque nesciunt numquam fugiat inventore!</p>
-          <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sit neque sequi eius illum at porro aperiam. Iusto reiciendis reprehenderit ipsa molestias sit eaque velit, veritatis quod, cum exercitationem doloribus.</p>
-          <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui quod consequuntur iure. Assumenda, magnam quis ut libero impedit porro?</p>
-          <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sit neque sequi eius illum at porro aperiam. Iusto reiciendis reprehenderit ipsa molestias sit eaque velit, veritatis quod, cum exercitationem doloribus eos cumque, ipsam voluptate! Nam doloribus quibusdam eos ipsum optio animi ea ex. Atque neque nesciunt numquam fugiat inventore!</p>
-          <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi earum, ut consequuntur pariatur fugiat aliquam voluptatem officia blanditiis ipsa laboriosam ad velit voluptate nisi saepe quisquam minima culpa eaque amet.</p>
-          <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sit neque sequi eius illum at porro aperiam. Iusto reiciendis reprehenderit ipsa molestias sit eaque velit, veritatis quod, cum exercitationem doloribus eos cumque, ipsam voluptate! Nam doloribus quibusdam eos ipsum optio animi ea ex. Atque neque nesciunt numquam fugiat inventore!</p>
-          <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sit neque sequi eius illum at porro aperiam. Iusto reiciendis reprehenderit ipsa molestias sit eaque velit, veritatis quod, cum exercitationem doloribus eos cumque, ipsam voluptate! Nam doloribus quibusdam eos ipsum optio animi ea ex. Atque neque nesciunt numquam fugiat inventore!</p>
-          <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sit neque sequi eius illum at porro aperiam. Iusto reiciendis reprehenderit ipsa molestias sit eaque velit, veritatis quod, cum exercitationem doloribus.</p>
-          <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui quod consequuntur iure. Assumenda, magnam quis ut libero impedit porro?</p>
-          <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem vero sit neque sequi eius illum at porro aperiam. Iusto reiciendis reprehenderit ipsa molestias sit eaque velit, veritatis quod, cum exercitationem doloribus eos cumque, ipsam voluptate! Nam doloribus quibusdam eos ipsum optio animi ea ex. Atque neque nesciunt numquam fugiat inventore!</p>
+        <div class="gallery-items__item grid-cols__column">
+          <a href="images/gallery/large/l-gallery-03.jpg" class="gallery-items__item-thumb glightbox">
+            <img src="images/gallery/gallery-03.jpg" srcset="images/gallery/gallery-03.jpg 1x, images/gallery/gallery-03@2x.jpg 2x" alt="" />
+          </a>
         </div>
-      </section>
 
-      <section id="menu" class="menu">
-        <div class="menu__intro">
-          <div class="menu__header">
-            <span class="section-header__number menu__number">02.</span>
-            <h2 class="section-header__title menu__title">Our Menu</h2>
-          </div>
-          <ol class="menu__tabs">
-            <li class="tab active">
-              <a class="tab__switch">
-                <div>
-                  <span class="tab__number">01.</span>
-                  <span class="tab__text">Signature Blends</span>
+        <div class="gallery-items__item grid-cols__column">
+          <a href="images/gallery/large/l-gallery-04.jpg" class="gallery-items__item-thumb glightbox">
+            <img src="images/gallery/gallery-04.jpg" srcset="images/gallery/gallery-04.jpg 1x, images/gallery/gallery-04@2x.jpg 2x" alt="" />
+          </a>
+        </div>
+
+        <div class="gallery-items__item grid-cols__column">
+          <a href="images/gallery/large/l-gallery-05.jpg" class="gallery-items__item-thumb glightbox">
+            <img src="images/gallery/gallery-05.jpg" srcset="images/gallery/gallery-05.jpg 1x, images/gallery/gallery-05@2x.jpg 2x" alt="" />
+          </a>
+        </div>
+
+        <div class="gallery-items__item grid-cols__column">
+          <a href="images/gallery/large/l-gallery-06.jpg" class="gallery-items__item-thumb glightbox">
+            <img src="images/gallery/gallery-06.jpg" srcset="images/gallery/gallery-06.jpg 1x, images/gallery/gallery-06@2x.jpg 2x" alt="" />
+          </a>
+        </div>
+
+        <div class="gallery-items__item grid-cols__column">
+          <a href="images/gallery/large/l-gallery-07.jpg" class="gallery-items__item-thumb glightbox">
+            <img src="images/gallery/gallery-07.jpg" srcset="images/gallery/gallery-07.jpg 1x, images/gallery/gallery-07@2x.jpg 2x" alt="" />
+          </a>
+        </div>
+
+        <div class="gallery-items__item grid-cols__column">
+          <a href="images/gallery/large/l-gallery-08.jpg" class="gallery-items__item-thumb glightbox">
+            <img src="images/gallery/gallery-08.jpg" srcset="images/gallery/gallery-08.jpg 1x, images/gallery/gallery-08@2x.jpg 2x" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h3 class="testimonials__header">What Our Clients Say</h2>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper testimonials__list">
+            <div class="swiper-slide testimonials__item">
+              <div class="testimonials__person">
+                <div class="testimonials__photo-wrapper">
+                  <img class="testimonial__photo" src="images/avatars/user-02.jpg" alt="John Rockefeller" />
                 </div>
-                <svg class="tab__arrow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" />
-                </svg>
-              </a>
-            </li>
-            <li class="tab">
-              <a class="tab__switch">
-                <div>
-                  <span class="tab__number">02.</span>
-                  <span class="tab__text">Freshly Baked Pastries</span>
+                <div class="testimonial__identity">
+                  <span class="testimonial__fullname">John Rockefeller</span>
+                  <span class="testimonial__location">Cleveland, Ohio</span>
                 </div>
-                <svg class="tab__arrow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" />
-                </svg>
-              </a>
-            </li>
-            <li class="tab">
-              <a class="tab__switch">
-                <div>
-                  <span class="tab__number">03.</span>
-                  <span class="tab__text">Gourmet Treats</span>
+              </div>
+              <div class="testimonial__text">Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. Explicabo a quaerat sint autem dolore ducimus ut consequatur neque. Nisi dolores quaerat fuga rem nihil nostrum. Laudantium quia consequatur molestias.</div>
+            </div>
+            <div class="swiper-slide testimonials__item">
+              <div class="testimonials__person">
+                <div class="testimonials__photo-wrapper">
+                  <img class="testimonial__photo" src="images/avatars/user-03.jpg" alt="Andrew Carnegie" />
                 </div>
-                <svg class="tab__arrow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero" />
-                </svg>
-              </a>
-            </li>
-          </ol>
+                <div class="testimonial__identity">
+                  <span class="testimonial__fullname">Andrew Carnegie</span>
+                  <span class="testimonial__location">Pittsburgh, Pennsylvania</span>
+                </div>
+              </div>
+              <div class="testimonial__text">Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci. Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis. Quasi voluptas eius distinctio. Atque eos maxime.</div>
+            </div>
+            <div class="swiper-slide testimonials__item">
+              <div class="testimonials__person">
+                <div class="testimonials__photo-wrapper">
+                  <img class="testimonial__photo" src="images/avatars/user-01.jpg" alt="John Morgan" />
+                </div>
+                <div class="testimonial__identity">
+                  <span class="testimonial__fullname">John Morgan</span>
+                  <span class="testimonial__location">New York City</span>
+                </div>
+              </div>
+              <div class="testimonial__text">Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam. Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio. Voluptatem dignissimos ut.</div>
+            </div>
+            <div class="swiper-slide testimonials__item">
+              <div class="testimonials__person">
+                <div class="testimonials__photo-wrapper">
+                  <img class="testimonial__photo" src="images/avatars/user-06.jpg" alt="Henry Ford" />
+                </div>
+                <div class="testimonial__identity">
+                  <span class="testimonial__fullname">Henry Ford</span>
+                  <span class="testimonial__location">Dearborn, Michigan</span>
+                </div>
+              </div>
+              <div class="testimonial__text">Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.</div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
+    </section>
+  </main>
 
-        <div class="menu__details">
-          <!-- Dynamic contenct from tabs.js -->
-        </div>
-      </section>
+  <form class="border">form</form>
 
-      <section id="gallery" class="gallery">
-        <div class="gallery__header">
-          <span class="section-header__number gallery__number">03.</span>
-          <h2 class="section-header__title gallery__title">Gallery</h2>
-        </div>
+  <footer class="border">footer</footer>
+</body>
+<script src="./scripts/preloader.js"></script>
+<script src="./scripts/navigation.js"></script>
+<script src="./scripts/dropdown.js"></script>
+<script src="./scripts/tabs.js"></script>
+<script src="./scripts/glightbox.js"></script>
+<script src="./scripts/gallery.js"></script>
+<script src="./scripts/center.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./scripts/swiper.js"></script>
+<!-- Swiper JS -->
 
-        <div class="gallery-items grid-cols grid-cols--wrap">
-          <div class="gallery-items__item grid-cols__column">
-            <a href="images/gallery/large/l-gallery-01.jpg" class="gallery-items__item-thumb glightbox">
-              <img src="images/gallery/gallery-01.jpg" srcset="images/gallery/gallery-01.jpg 1x, images/gallery/gallery-01@2x.jpg 2x" alt="" />
-            </a>
-          </div>
-
-          <div class="gallery-items__item grid-cols__column">
-            <a href="images/gallery/large/l-gallery-02.jpg" class="gallery-items__item-thumb glightbox">
-              <img src="images/gallery/gallery-02.jpg" srcset="images/gallery/gallery-02.jpg 1x, images/gallery/gallery-02@2x.jpg 2x" alt="" />
-            </a>
-          </div>
-
-          <div class="gallery-items__item grid-cols__column">
-            <a href="images/gallery/large/l-gallery-03.jpg" class="gallery-items__item-thumb glightbox">
-              <img src="images/gallery/gallery-03.jpg" srcset="images/gallery/gallery-03.jpg 1x, images/gallery/gallery-03@2x.jpg 2x" alt="" />
-            </a>
-          </div>
-
-          <div class="gallery-items__item grid-cols__column">
-            <a href="images/gallery/large/l-gallery-04.jpg" class="gallery-items__item-thumb glightbox">
-              <img src="images/gallery/gallery-04.jpg" srcset="images/gallery/gallery-04.jpg 1x, images/gallery/gallery-04@2x.jpg 2x" alt="" />
-            </a>
-          </div>
-
-          <div class="gallery-items__item grid-cols__column">
-            <a href="images/gallery/large/l-gallery-05.jpg" class="gallery-items__item-thumb glightbox">
-              <img src="images/gallery/gallery-05.jpg" srcset="images/gallery/gallery-05.jpg 1x, images/gallery/gallery-05@2x.jpg 2x" alt="" />
-            </a>
-          </div>
-
-          <div class="gallery-items__item grid-cols__column">
-            <a href="images/gallery/large/l-gallery-06.jpg" class="gallery-items__item-thumb glightbox">
-              <img src="images/gallery/gallery-06.jpg" srcset="images/gallery/gallery-06.jpg 1x, images/gallery/gallery-06@2x.jpg 2x" alt="" />
-            </a>
-          </div>
-
-          <div class="gallery-items__item grid-cols__column">
-            <a href="images/gallery/large/l-gallery-07.jpg" class="gallery-items__item-thumb glightbox">
-              <img src="images/gallery/gallery-07.jpg" srcset="images/gallery/gallery-07.jpg 1x, images/gallery/gallery-07@2x.jpg 2x" alt="" />
-            </a>
-          </div>
-
-          <div class="gallery-items__item grid-cols__column">
-            <a href="images/gallery/large/l-gallery-08.jpg" class="gallery-items__item-thumb glightbox">
-              <img src="images/gallery/gallery-08.jpg" srcset="images/gallery/gallery-08.jpg 1x, images/gallery/gallery-08@2x.jpg 2x" alt="" />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="border">
-        <h2>What Our Clients Say</h2>
-      </section>
-    </main>
-
-    <form class="border">form</form>
-
-    <footer class="border">footer</footer>
-  </body>
-  <script src="./scripts/preloader.js"></script>
-  <script src="./scripts/navigation.js"></script>
-  <script src="./scripts/dropdown.js"></script>
-  <script src="./scripts/tabs.js"></script>
-  <script src="./scripts/glightbox.js"></script>
-  <script src="./scripts/gallery.js"></script>
-  <script src="./scripts/center.js"></script>
 </html>
