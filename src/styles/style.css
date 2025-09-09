@@ -3,9 +3,11 @@
 @import './components/button.css';
 @import './components/preloader.css';
 @import './components/gligthbox.css';
+@import './components/swiper.css';
 @import './utilities.css';
 @import './sections/header.css';
 @import './sections/intro.css';
 @import './sections/about.css';
 @import './sections/menu.css';
 @import './sections/gallery.css';
+@import './sections/testimonials.css';

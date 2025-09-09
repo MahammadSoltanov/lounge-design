@@ -207,6 +207,10 @@
         border-inline: none;
     }
 
+    .tab__switch {
+        text-wrap: wrap;
+    }
+
     .tab__text {
         font-size: calc(2rem * var(.8125));
     }
