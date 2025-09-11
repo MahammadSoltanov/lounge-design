@@ -72,3 +72,10 @@
 .testimonial__text {
     color: var(--color-neutral-200);
 }
+
+@media screen and (max-width: 800px) {
+    .testimonials__item {
+        align-items: center;
+        text-align: center;
+    }
+}
