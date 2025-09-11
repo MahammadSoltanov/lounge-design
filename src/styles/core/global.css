@@ -77,3 +77,10 @@ img {
     margin-bottom: var(--vspace-2);
     line-height: 1.2;
 }
+
+@media screen and (max-width: 400px) {
+
+    .section-header__title {
+        text-wrap: wrap;
+    }
+}

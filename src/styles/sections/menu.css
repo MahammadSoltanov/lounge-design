@@ -226,4 +226,27 @@
     .menu__item-description {
         font-size: var(--text-xs);
     }
+
+
+    .menu__details-header {
+        text-wrap: wrap;
+        padding-left: 0;
+    }
+
+    .menu__details-header::before {
+        display: none;
+    }
+
+
+    .tab__text {
+        text-wrap: wrap;
+    }
+
+    .menu__item {
+        flex-wrap: wrap;
+    }
+
+    .menu__item-price {
+        margin-bottom: var(--vspace-1);
+    }
 }

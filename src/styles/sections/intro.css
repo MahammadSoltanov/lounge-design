@@ -269,6 +269,16 @@
     .intro-details__img--secondary {
         width: max(18rem, 60%);
     }
+
+    .intro-header__title {
+        font-size: clamp(calc(var(--text-display) * 0.8),
+                calc(var(--text-3xl) * 0.8 + 8vw),
+                calc(18.4rem * 0.8));
+    }
+
+    .intro-media__img--primary {
+        display: none;
+    }
 }
 
 
