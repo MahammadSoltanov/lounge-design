@@ -56,7 +56,9 @@ fetch("./data/menu-items.json")
 
     document.querySelectorAll(".menu__tabs .tab").forEach((tabEl) => {
       tabEl.addEventListener("click", () => {
-        document.querySelectorAll(".menu__tabs .tab").forEach((el) => el.classList.remove("active"));
+        document
+          .querySelectorAll(".menu__tabs .tab")
+          .forEach((el) => el.classList.remove("active"));
         tabEl.classList.add("active");
 
         const tabName = tabEl.querySelector(".tab__text").textContent.trim();
@@ -67,7 +69,9 @@ fetch("./data/menu-items.json")
       });
     });
 
-    const activeTabName = document.querySelector(".menu__tabs .tab.active .tab__text").textContent.trim();
+    const activeTabName = document
+      .querySelector(".menu__tabs .tab.active .tab__text")
+      .textContent.trim();
     const activeTabId = tabMap[activeTabName];
     const activeTabData = menuData.tabs.find((t) => t.id === activeTabId);
     if (activeTabData) renderTab(activeTabData, menuDetails);

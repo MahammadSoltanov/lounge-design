@@ -53,8 +53,7 @@
 .newsletter-form__input {
   color: var(--color-white);
   height: var(--input-height);
-  padding: var(--input-vpadding) var(--vspace-0_75)
-    calc(var(--input-vpadding) - 1px);
+  padding: var(--input-vpadding) var(--vspace-0_75) calc(var(--input-vpadding) - 1px);
   border-radius: 1000px;
   background-color: var(--color-bg-neutral);
   font-size: var(--text-sm);
@@ -68,8 +67,7 @@
 }
 
 .newsletter-form__button {
-  padding: var(--input-vpadding) var(--vspace-0_75)
-    calc(var(--input-vpadding) - 1px);
+  padding: var(--input-vpadding) var(--vspace-0_75) calc(var(--input-vpadding) - 1px);
   flex: 0 0 auto;
   min-width: max-content;
   white-space: nowrap;
@@ -85,7 +83,7 @@
 
 @media screen and (max-width: 1200px) {
   .newsletter-form__content {
-    width: 70%;    
+    width: 70%;
   }
 }
 

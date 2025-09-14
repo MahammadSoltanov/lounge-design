@@ -1,9 +1,9 @@
 .u-grid-center {
-    display: grid;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .u-page-padding {
-    padding-inline: calc(var(--gutter) * 2);
+  padding-inline: calc(var(--gutter) * 2);
 }

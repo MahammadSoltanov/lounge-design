@@ -1,28 +1,27 @@
 :root {
-    --btn-text-size: var(--text-sm);
-    --btn-lineheight: var(--vspace-0_75);
-    --btn-icon-size: var(--btn-text-size);
-    --btn-gap: var(--vspace-0_25);
-    --btn-border-width: 1px;
-    --btn-padding: var(--vspace-0_5);
-    --btn-vpadding: calc(var(--btn-padding) - var(--btn-border-width));
-    --btn-hpadding: calc((var(--btn-padding) * 2) - var(--btn-border-width));
-    --btn-radius: var(--radius-full);
+  --btn-text-size: var(--text-sm);
+  --btn-lineheight: var(--vspace-0_75);
+  --btn-icon-size: var(--btn-text-size);
+  --btn-gap: var(--vspace-0_25);
+  --btn-border-width: 1px;
+  --btn-padding: var(--vspace-0_5);
+  --btn-vpadding: calc(var(--btn-padding) - var(--btn-border-width));
+  --btn-hpadding: calc((var(--btn-padding) * 2) - var(--btn-border-width));
+  --btn-radius: var(--radius-full);
 }
 
-
 button {
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button:focus {
-    outline: none;
+  outline: none;
 }

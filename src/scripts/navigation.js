@@ -25,7 +25,9 @@ function scrollToElement(element, duration = 1000) {
 }
 
 const navLinks = document.querySelectorAll("[target-section]");
-const sections = Array.from(navLinks).map((link) => document.getElementById(link.getAttribute("target-section")));
+const sections = Array.from(navLinks).map((link) =>
+  document.getElementById(link.getAttribute("target-section"))
+);
 
 navLinks[0].classList.add("active");
 
@@ -48,7 +50,9 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const currentId = entry.target.id;
-        navLinks.forEach((link) => link.classList.toggle("active", link.getAttribute("target-section") === currentId));
+        navLinks.forEach((link) =>
+          link.classList.toggle("active", link.getAttribute("target-section") === currentId)
+        );
       }
     });
   },

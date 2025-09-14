@@ -1,14 +1,12 @@
-  :root {
-
-
-      /* Widths for containers*/
-      --width-sixteen-cols: 1760px;
-      --width-default: 1440px;
-      --width-wide: 1600px;
-      --width-wider: 1800px;
-      --width-narrow: 1200px;
-      --width-narrower: 1000px;
-      --width-narrowest: 800px;
-      --width-full: 100%;
-      --width-grid-max: var(--width-default);
-  }
+:root {
+  /* Widths for containers*/
+  --width-sixteen-cols: 1760px;
+  --width-default: 1440px;
+  --width-wide: 1600px;
+  --width-wider: 1800px;
+  --width-narrow: 1200px;
+  --width-narrower: 1000px;
+  --width-narrowest: 800px;
+  --width-full: 100%;
+  --width-grid-max: var(--width-default);
+}
