@@ -38,7 +38,7 @@ navLinks.forEach((link) => {
     const id = link.getAttribute("target-section");
     const section = document.getElementById(id);
 
-    scrollToElement(section, 250);
+    scrollToElement(section, 1000);
 
     navLinks.forEach((l) => l.classList.remove("active"));
     link.classList.add("active");
