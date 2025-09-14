@@ -14,15 +14,6 @@
   top: var(--vspace-2);
 }
 
-.menu__header {
-}
-
-.menu__number {
-}
-
-.menu__title {
-}
-
 .menu__tabs {
   display: flex;
   flex-direction: column;
@@ -62,9 +53,6 @@
   font-size: var(--text-xs);
   margin-right: var(--vspace-0_625);
   color: var(--color-text-light);
-}
-
-.tab__text {
 }
 
 .tab__arrow {
@@ -120,9 +108,6 @@
   left: 0;
 }
 
-.menu__items {
-}
-
 .menu__item {
   font-weight: 400;
   padding: var(--vspace-1);
@@ -155,9 +140,6 @@
   line-height: var(--vspace-0_75);
   margin-bottom: var(--vspace-1);
   color: var(--color-text-light);
-}
-
-.menu__item-price {
 }
 
 @media screen and (max-width: 1205px) {
