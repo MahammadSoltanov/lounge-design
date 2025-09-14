@@ -1,66 +1,177 @@
 .footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  gap: calc(var(--vspace-0_5) + var(--vspace-1) + var(--vspace-1_5));
+  padding-bottom: var(--vspace-2_5);
 }
 
 .footer__main {
-    display: flex
+  display: flex;
+  gap: var(--vspace-1_5);
 }
 
 .footer__branding {
-    display: flex;
-    flex: none;
-    width: 25%;
-    flex-direction: column;
-    gap: var(--vspace-0_5);
+  display: flex;
+  flex: none;
+  width: 23%;
+  flex-direction: column;
+  gap: var(--vspace-0_5);
 }
 
 .footer__logo {
-    height: fit-content;
-    padding-top: var(--vspace-0_5);
+  height: 4.2rem;
+}
+
+.footer__logo img {
+  width: 16rem;
 }
 
 .footer__social-list {
-    display: flex;
-    gap: var(--vspace-0_25)
+  display: flex;
+  gap: var(--vspace-0_25);
 }
 
-.footer__social-item {}
-
 .footer__info {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: calc(var(--gutter) * 2);
-
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: calc(var(--gutter) * 2);
+  row-gap: calc(var(--vspace-1) + var(--vspace-0_5));
 }
 
 .footer__info-group {
-    flex: none;
-    flex-basis: 1
+  flex: none;
+  flex-basis: 1;
+  /* min-width: 30rem; */
 }
 
 .footer__info-title {
-    margin-bottom: var(--vspace-0_5);
-    color: var(--color-bg-accent);
-    font-weight: 500;
-    font-size: var(--type-size-h6);
-    line-height: 1.6;
-    text-transform: uppercase;
-    letter-spacing: .18em;
+  margin-bottom: var(--vspace-0_5);
+  color: var(--color-bg-accent);
+  font-weight: 500;
+  font-size: var(--type-size-h6);
+  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
 }
 
 .footer__info-text {
-    display: flex;
-    flex-direction: column;
-    gap: var(--vspace-0_125);
+  color: var(--color-neutral-200);
+  display: flex;
+  flex-direction: column;
+  gap: var(--vspace-0_125);
 }
 
-.footer__bottom {}
+.footer__info-text div {
+  display: flex;
+  gap: 1.6rem;
+}
 
-.footer__credits {}
+.footer__info-text div span {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 0;
+  gap: 1.6rem;
+}
 
-.footer__scroll-top {}
+.info__opening-hours {
+  font-size: var(--text-sm);
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--vspace-1);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+  padding-top: var(--vspace-1);
+  margin-top: var(--vspace-1_5);
+  color: var(--color-text-light);
+}
+
+.footer__credits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__credits-item {
+  min-width: 0;
+}
+
+.footer__credits-item a {
+  color: var(--color-white);
+}
+
+.footer__credits-item a :hover {
+  color: var(--color-1-500);
+}
+
+.footer__credits-item--copyright::after {
+  content: "|";
+  display: inline-block;
+  padding: 0 0.8rem 0 1rem;
+  color: var(--color-border);
+}
+
+.footer__credits-item--design::after {
+  content: "|";
+  display: inline-block;
+  padding: 0 0.8rem 0 1rem;
+  color: var(--color-border);
+}
+
+.footer__scroll-top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 1000px;
+  border: 1px solid var(--color-neutral-50);
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1450px) {
+  .footer__info {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer__main {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer__credits-item--design::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .footer__credits-item--copyright::after {
+    display: none;
+  }
+
+  .footer__credits-item {
+    width: 10;
+    flex: 1;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    white-space: normal;
+  }
+
+  .footer__credits {
+    flex-direction: column;
+    row-gap: var(--vspace-0_5);
+  }
+
+  .footer__info-text div {
+    flex-wrap: wrap;
+    width: 10ch;
+  }
+}
