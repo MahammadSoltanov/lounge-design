@@ -2,9 +2,9 @@ function easeInOutQuad(t) {
   return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
 }
 
-function scrollToElement(element, duration = 1000) {
+function scrollToElement(element, duration = 1000, offset = 0) {
   const startY = window.scrollY;
-  const targetY = element.getBoundingClientRect().top + startY;
+  const targetY = element.getBoundingClientRect().top + startY + offset;
   const distance = targetY - startY;
   let startTime = null;
 
@@ -38,7 +38,7 @@ navLinks.forEach((link) => {
     const id = link.getAttribute("target-section");
     const section = document.getElementById(id);
 
-    scrollToElement(section, 1000);
+    scrollToElement(section, 1000, -100);
 
     navLinks.forEach((l) => l.classList.remove("active"));
     link.classList.add("active");
@@ -48,7 +48,7 @@ navLinks.forEach((link) => {
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting && entry.intersectionRatio > 0.04) {
         const currentId = entry.target.id;
         navLinks.forEach((link) =>
           link.classList.toggle("active", link.getAttribute("target-section") === currentId)
